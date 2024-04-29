@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animación con GSAP</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            display: inline-block;
+            background: teal;
+            opacity: 0;
+            /* inicialmente ocultos */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Libreria GSAP</h1>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+
+    <script>
+        // GSAP Animations
+        gsap.to('#box1', {
+            duration: 1,
+            opacity: 1,
+            x: 150,
+            ease: 'power1.out'
+        });
+        gsap.to('#box2', {
+            duration: 1.5,
+            opacity: 1,
+            y: 100,
+            ease: 'bounce.out',
+            delay: 0.5
+        });
+        gsap.to('#box3', {
+            duration: 1,
+            opacity: 1,
+            x: -150,
+            rotation: 360,
+            delay: 1
+        });
+    </script>
+</body>
+
+</html>

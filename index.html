@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<title>AniJS TabBar</title>
+
+<head>
+    <link rel="stylesheet" href="https://anijs.github.io/lib/anicollection/anicollection.css" />
+    <link rel="stylesheet" type="" href="css/index.css">
+
+</head>
+
+<body>
+
+    <!-- The example -->
+    <div class="container center">
+        <div class="tab-bar demo">
+
+            <h2 class="tab">GSAPJS</h2>
+            <section>
+                <h2>GSAPJS</h2>
+                <p>GSAPJS es una libreria de animacion de javascript que permite realizar animaciones de una manera mas
+                    facil y rapida.</p>
+                <iframe class="gsap" src="animaciones/gsap.html"></iframe>
+                <iframe class="gsap" src="animaciones/gsap2.html"></iframe>
+            </section>
+            <h2 class="tab ">Chart JS</h2>
+            <section>
+                <h2>Chart JS</h2>
+                <p>Chart JS es una libreria de javascript que permite realizar graficos de una manera mas facil y
+                    rapida.
+                </p>
+                <iframe class="chart" src="animaciones/chartjs.html"></iframe>
+            </section>
+            <h2 class="tab">Prticles JS</h2>
+            <section>
+                <h2>Particles JS</h2>
+                <p>Particles JS es una libreria de javascript que permite realizar animaciones de particulas de una
+                    manera mas facil y rapida.
+                </p>
+                <iframe class="particle" class="particles" src="animaciones/particlesjs.html"></iframe>
+                <iframe class="particle" src="animaciones/particlesjs2.html"></iframe>
+                <iframe class="particle" src="animaciones/particlesjs3.html"></iframe>
+                <iframe class="particle" src="animaciones/particlesjs4.html"></iframe>
+                <iframe class="particle" src="animaciones/particlesjs5.html"></iframe>
+            </section>
+            <h2 class="tab">ScrollMagic JS</h2>
+            <section>
+                <h2>ScrollMagic JS</h2>
+                <p>ScrollMagic JS es una libreria de javascript que permite realizar animaciones de scroll de una manera
+                    mas facil y rapida.
+                </p>
+                <iframe class="scroll" src="animaciones/scrollmagic.html"></iframe>
+
+            </section>
+            <h2 class="tab">Timeline JS</h2>
+            <section>
+                <h2>Timeline JS</h2>
+                <p>Timeline JS es una libreria de javascript que permite realizar animaciones de tiempo de una manera
+                    mas facil y rapida.
+                </p>
+                <iframe class="timeline" src="animaciones/timeline.html"></iframe>
+            </section>
+            <!-- The AniJS definition -->
+            <input type="hidden" data-anijs="if: mouseover, on: .tab, do: $removeClass active, to: .tab.active;
+                       if: mouseover, on: .tab, do: $addClass active, to: target">
+            <!-- end AniJS definition -->
+        </div>
+    </div>
+    <!-- End example -->
+
+
+
+
+    <script src="https://anijs.github.io/lib/anijs/anijs.js"></script>
+    <script src="https://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom.js"></script>
+</body>
+
+</html>

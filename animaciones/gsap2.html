@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animación Avanzada con GSAP</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f0f0f0;
+        }
+
+        .box {
+            width: 80px;
+            height: 80px;
+            margin: 10px;
+            display: inline-block;
+            background-color: #3b7dd8;
+            border-radius: 10px;
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Libreria GSAP</h1>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+
+    <script>
+        // GSAP Animations
+        gsap.to('#box1', {
+            duration: 1,
+            opacity: 1,
+            scale: 1.5,
+            ease: "elastic.out(1, 0.3)",
+            delay: 0.2
+        });
+        gsap.to('#box2', {
+            duration: 1,
+            opacity: 1,
+            x: 200,
+            rotation: 360,
+            ease: "power4.out",
+            delay: 0.4
+        });
+        gsap.to('#box3', {
+            duration: 1,
+            opacity: 1,
+            y: -100,
+            rotation: -360,
+            scale: 1.2,
+            ease: "back.out(1.7)",
+            delay: 0.6
+        });
+        gsap.to('#box4', {
+            duration: 1.2,
+            opacity: 1,
+            x: -200,
+            y: 100,
+            scale: 0.5,
+            ease: "bounce.out",
+            delay: 0.8
+        });
+    </script>
+</body>
+
+</html>
